@@ -1,0 +1,20 @@
+name: Idea or question
+description: Something BNW should do, or something you'd like to understand.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ideas, rough edges, and questions are all welcome. Issues here are public.
+  - type: textarea
+    id: what
+    attributes:
+      label: What would you like?
+      description: The problem you're trying to solve, or your question. What you're building helps us most.
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you tried
+      description: Anything you tried already, or how you work around it today.

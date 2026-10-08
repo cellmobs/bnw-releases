@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Documentation
+    url: https://bnw.cellmobs.com/docs/
+    about: Install, quick start, guides, and the architecture.
+  - name: Private questions, pilots, and the iPhone beta
+    url: https://bnw.cellmobs.com/contact
+    about: For anything you'd rather not post publicly.

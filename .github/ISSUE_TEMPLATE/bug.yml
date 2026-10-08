@@ -1,0 +1,49 @@
+name: Bug report
+description: Something in BNW doesn't work as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for trying BNW and taking the time to report this. Issues here are public: leave out secrets, API keys, private messages, and anything else you wouldn't post openly.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The output of `bnw --version`, or the iPhone app's version from Settings.
+      placeholder: bnw 0.7.11
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Where it happened
+      multiple: true
+      options:
+        - macOS
+        - Linux
+        - Windows
+        - iPhone app
+        - Web client
+        - bnw mcp serve (an AI assistant)
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, step by step, and what you saw.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: The node's log around the problem (`RUST_LOG=info`), with secrets and private content removed.
+      render: text
